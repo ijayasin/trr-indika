@@ -1,0 +1,20 @@
+Usage:
+  rails generate rspec:controller NAME [action action] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]      # Skip namespace (affects only isolated applications)
+  -e, [--template-engine=TEMPLATE_ENGINE]            # Template engine to generate view files
+                                                     # Default: erb
+      [--controller-specs], [--no-controller-specs]  # Indicates when to generate controller specs
+                                                     # Default: true
+      [--view-specs], [--no-view-specs]              # Indicates when to generate view specs
+                                                     # Default: true
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Create rspec files for controller generator.

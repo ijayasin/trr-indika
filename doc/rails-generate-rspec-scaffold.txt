@@ -1,0 +1,35 @@
+Usage:
+  rails generate rspec:scaffold NAME [field:type field:type] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]      # Skip namespace (affects only isolated applications)
+      [--force-plural], [--no-force-plural]          # Forces the use of the given model name
+      [--model-name=MODEL_NAME]                      # ModelName to be used
+  -o, [--orm=ORM]                                    # ORM used to generate the controller
+                                                     # Default: active_record
+  -e, [--template-engine=TEMPLATE_ENGINE]            # Template engine to generate view files
+                                                     # Default: erb
+      [--singleton], [--no-singleton]                # Supply to create a singleton controller
+      [--controller-specs], [--no-controller-specs]  # Generate controller specs
+                                                     # Default: true
+      [--view-specs], [--no-view-specs]              # Generate view specs
+                                                     # Default: true
+      [--helper-specs], [--no-helper-specs]          # Generate helper specs
+                                                     # Default: true
+      [--routing-specs], [--no-routing-specs]        # Generate routing specs
+                                                     # Default: true
+      [--integration-tool=NAME]                      # Integration tool to be invoked
+                                                     # Default: rspec
+
+Rspec options:
+  [--request-specs], [--no-request-specs]  # Generate request specs
+                                           # Default: true
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Create rspec files for scaffold generator.

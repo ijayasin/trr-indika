@@ -1,0 +1,31 @@
+Usage:
+  rails generate helper NAME [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+  -t, [--test-framework=NAME]                    # Test framework to be invoked
+                                                 # Default: rspec
+
+Rspec options:
+  [--helper-specs], [--no-helper-specs]  # Indicates when to generate helper specs
+                                         # Default: true
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new helper. Pass the helper name, either CamelCased
+    or under_scored.
+
+    To create a helper within a module, specify the helper name as a
+    path like 'parent_module/helper_name'.
+
+Example:
+    `rails generate helper CreditCard`
+
+    Credit card helper.
+        Helper:     app/helpers/credit_card_helper.rb
+

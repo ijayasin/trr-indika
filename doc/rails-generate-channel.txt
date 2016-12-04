@@ -1,0 +1,28 @@
+Usage:
+  rails generate channel NAME [method method] [options]
+
+Options:
+  [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+  [--assets], [--no-assets]                  # Indicates when to generate assets
+                                             # Default: true
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+============
+    Stubs out a new cable channel for the server (in Ruby) and client (in CoffeeScript).
+    Pass the channel name, either CamelCased or under_scored, and an optional list of channel actions as arguments.
+
+    Note: Turn on the cable connection in app/assets/javascript/cable.js after generating any channels.
+
+Example:
+========
+    rails generate channel Chat speak
+
+    creates a Chat channel class and CoffeeScript asset:
+        Channel:    app/channels/chat_channel.rb
+        Assets:     app/assets/javascript/channels/chat.coffee

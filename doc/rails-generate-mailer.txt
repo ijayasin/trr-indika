@@ -1,0 +1,33 @@
+Usage:
+  rails generate mailer NAME [method method] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+  -e, [--template-engine=NAME]                   # Template engine to be invoked
+                                                 # Default: erb
+  -t, [--test-framework=NAME]                    # Test framework to be invoked
+                                                 # Default: rspec
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+============
+    Stubs out a new mailer and its views. Passes the mailer name, either
+    CamelCased or under_scored, and an optional list of emails as arguments.
+
+    This generates a mailer class in app/mailers and invokes your template
+    engine and test framework generators.
+
+Example:
+========
+    rails generate mailer Notifications signup forgot_password invoice
+
+    creates a Notifications mailer class, views, and test:
+        Mailer:     app/mailers/notifications_mailer.rb
+        Views:      app/views/notifications_mailer/signup.text.erb [...]
+        Test:       test/mailers/notifications_mailer_test.rb
+

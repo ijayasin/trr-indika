@@ -1,0 +1,40 @@
+Usage:
+  rails generate assets NAME [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+  -j, [--javascripts], [--no-javascripts]        # Generate JavaScripts
+                                                 # Default: true
+  -y, [--stylesheets], [--no-stylesheets]        # Generate Stylesheets
+                                                 # Default: true
+  -je, [--javascript-engine=JAVASCRIPT_ENGINE]   # Engine for JavaScripts
+                                                 # Default: coffee
+  -se, [--stylesheet-engine=STYLESHEET_ENGINE]   # Engine for Stylesheets
+                                                 # Default: scss
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out new asset placeholders. Pass the asset name, either CamelCased
+    or under_scored.
+
+    To create an asset within a folder, specify the asset's name as a
+    path like 'parent/name'.
+
+    This generates a JavaScript stub in app/assets/javascripts and a stylesheet
+    stub in app/assets/stylesheets.
+
+    If CoffeeScript is available, JavaScripts will be generated with the .coffee extension.
+    If Sass 3 is available, stylesheets will be generated with the .scss extension.
+
+Example:
+    `rails generate assets posts`
+
+    Posts assets.
+        JavaScript:     app/assets/javascripts/posts.js
+        Stylesheet:     app/assets/stylesheets/posts.css
+

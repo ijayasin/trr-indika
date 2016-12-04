@@ -1,0 +1,16 @@
+Usage:
+  rails generate test_unit:generator NAME [options]
+
+Options:
+  [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+  [--namespace], [--no-namespace]            # Namespace generator under lib/generators/name
+                                             # Default: true
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Create test unit files for generator generator.

@@ -1,0 +1,45 @@
+Usage:
+  rails generate controller NAME [action action] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+      [--skip-routes], [--no-skip-routes]        # Don't add routes to config/routes.rb.
+  -e, [--template-engine=NAME]                   # Template engine to be invoked
+                                                 # Default: erb
+  -t, [--test-framework=NAME]                    # Test framework to be invoked
+                                                 # Default: rspec
+      [--helper]                                 # Indicates when to generate helper
+                                                 # Default: true
+      [--assets]                                 # Indicates when to generate assets
+                                                 # Default: true
+
+Rspec options:
+  [--controller-specs], [--no-controller-specs]  # Indicates when to generate controller specs
+                                                 # Default: true
+  [--view-specs], [--no-view-specs]              # Indicates when to generate view specs
+                                                 # Default: true
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new controller and its views. Pass the controller name, either
+    CamelCased or under_scored, and a list of views as arguments.
+
+    To create a controller within a module, specify the controller name as a
+    path like 'parent_module/controller_name'.
+
+    This generates a controller class in app/controllers and invokes helper,
+    template engine, assets, and test framework generators.
+
+Example:
+    `rails generate controller CreditCards open debit credit close`
+
+    CreditCards controller with URLs like /credit_cards/debit.
+        Controller: app/controllers/credit_cards_controller.rb
+        Test:       test/controllers/credit_cards_controller_test.rb
+        Views:      app/views/credit_cards/debit.html.erb [...]
+        Helper:     app/helpers/credit_cards_helper.rb

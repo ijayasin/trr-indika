@@ -1,0 +1,28 @@
+Usage:
+  rails generate integration_test NAME [options]
+
+Options:
+  [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+  [--integration-tool=NAME]                  # Integration tool to be invoked
+                                             # Default: rspec
+
+Rspec options:
+  [--request-specs], [--no-request-specs]  # Generate request specs
+                                           # Default: true
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new integration test. Pass the name of the test, either
+    CamelCased or under_scored, as an argument.
+
+    This generator invokes the current integration tool, which defaults to
+    TestUnit.
+
+Example:
+    `rails generate integration_test GeneralStories` creates a GeneralStories
+    integration test in test/integration/general_stories_test.rb

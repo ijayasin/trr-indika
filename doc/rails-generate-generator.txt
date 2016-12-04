@@ -1,0 +1,29 @@
+Usage:
+  rails generate generator NAME [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+      [--namespace], [--no-namespace]            # Namespace generator under lib/generators/name
+                                                 # Default: true
+  -t, [--test-framework=NAME]                    # Test framework to be invoked
+                                                 # Default: rspec
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new generator at lib/generators. Pass the generator name as an argument,
+    either CamelCased or snake_cased.
+
+Example:
+    `rails generate generator Awesome`
+
+    creates a standard awesome generator:
+        lib/generators/awesome/
+        lib/generators/awesome/awesome_generator.rb
+        lib/generators/awesome/USAGE
+        lib/generators/awesome/templates/
+        test/lib/generators/awesome_generator_test.rb
