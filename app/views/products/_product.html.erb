@@ -1,0 +1,14 @@
+<div class="col-md-4">
+  <div class="thumbnail">
+    <% if product.meduim_main_images.present? %>
+      <img src="<%= product.meduim_main_images.first %>" alt="">
+    <% else %>
+      <img src="http://placehold.it/350x222" alt="">
+    <% end %>
+    <div class="caption">
+      <h4 class="float-md-right"><%= humanized_money_with_symbol product.price %></h4>
+      <h4><%= product.name %></h4>
+      <p><%= product.description %></p>
+    </div>
+  </div>
+</div>

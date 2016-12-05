@@ -8,32 +8,20 @@
 </ul>
 
 
-<table class="table">
-<thead>
-  <th></th>
-  <th>ID</th>
-  <th>SKU</th>
-  <th><Name</th>
-  <th>Availability</th>
-  <th>Condition</th>
-</thead>
-<tbody>
-<% @products.each_with_index do |product, i| %>
-  <tr>
-    <th scope="row"><%= i +1      %></th>
-    <td><%= product.id            %></td>
-    <td><%= product.sku           %></td>
-    <td><%= product.name          %></td>
-    <td><%= product.availability  %></td>
-    <td><%= product.condition     %></td>
-    <td><img src="<%= product.meduim_main_images.first %>" style="height:50px"/></td>
-  </tr>
-<% end %>
-</tbody>
-</table>
+<% #= render :partial => 'products_table', :locals => {:products => @products} %>
+
+
+<div class="container">
+  <div class="row">
+    <%= render :partial => 'product', :collection => @products %>
+  </div>
+</div>
 
 
 <%= javascript_tag do %>
 var Turbolinks = require("turbolinks");
 Turbolinks.start();
 <% end %>
+
+
+

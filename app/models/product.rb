@@ -97,7 +97,7 @@ class Product < ActiveResource::Base
   def filtered_images(rel, size)
     (images || []).select{|img| img.rel == rel}.map do |img|
       img.media.select{|m| m.size == size }.map{|m| m.src }
-    end.flatten
+    end.flatten || []
   end
 end
 
