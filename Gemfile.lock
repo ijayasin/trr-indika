@@ -55,6 +55,11 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.1.4)
+    autoprefixer-rails (6.5.3)
+      execjs
+    bootstrap (4.0.0.alpha5)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
     builder (3.2.2)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -132,6 +137,7 @@ GEM
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_layout (1.0.34)
     railties (5.0.0.1)
       actionpack (= 5.0.0.1)
       activesupport (= 5.0.0.1)
@@ -210,6 +216,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeresource!
+  bootstrap (~> 4.0.0.alpha5)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -219,6 +226,7 @@ DEPENDENCIES
   net-http-spy
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
+  rails_layout
   rspec-rails
   sass-rails (~> 5.0)
   spring

@@ -32,6 +32,11 @@ Coffee:
 Js:
   js:assets
 
+Layout:
+  layout:devise
+  layout:install
+  layout:navigation
+
 MoneyRails:
   money_rails:initializer
 

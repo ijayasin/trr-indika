@@ -38,9 +38,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'activeresource', git: 'https://github.com/rails/activeresource.git'
 gem 'activeresource', github_https: 'rails/activeresource', branch: 'master'
 
-
 # Use the money gem to handle currency values.
 gem 'money-rails'
+
+
+# Bootstrap
+gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'rails_layout'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

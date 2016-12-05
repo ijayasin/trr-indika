@@ -5,6 +5,7 @@ rake assets:clean[keep]                 # Remove old compiled assets
 rake assets:clobber                     # Remove compiled assets
 rake assets:environment                 # Load asset compile environment
 rake assets:precompile                  # Compile all the assets named in config.assets.precompile
+rake autoprefixer:info                  # Show selected browsers and prefixed CSS properties and values
 rake cache_digests:dependencies         # Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)
 rake cache_digests:nested_dependencies  # Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)
 rake db:create                          # Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to creating the development and test databases

@@ -8,7 +8,7 @@
 </ul>
 
 
-<table>
+<table class="table">
 <thead>
   <th></th>
   <th>ID</th>
@@ -20,7 +20,7 @@
 <tbody>
 <% @products.each_with_index do |product, i| %>
   <tr>
-    <td><%= i +1                  %></td>
+    <th scope="row"><%= i +1      %></th>
     <td><%= product.id            %></td>
     <td><%= product.sku           %></td>
     <td><%= product.name          %></td>
