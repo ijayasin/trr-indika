@@ -49,6 +49,7 @@ group :development, :test do
 
   # VCR framework for speeeding tests which call external APIs.
   gem 'vcr'
+  gem 'net-http-spy'
 end
 
 group :development do

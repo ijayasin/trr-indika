@@ -1,5 +1,13 @@
 <h1>Products</h1>
 
+
+<ul data-turbolinks="true">
+<% product_aggregations_filters(@products) do |name, selected, facet_url| %>
+  <li><%= link_to(name, facet_url) %> (<%= selected %>)</li>
+<% end %>
+</ul>
+
+
 <table>
 <thead>
   <th></th>
@@ -23,3 +31,9 @@
 <% end %>
 </tbody>
 </table>
+
+
+<%= javascript_tag do %>
+var Turbolinks = require("turbolinks");
+Turbolinks.start();
+<% end %>

@@ -16,11 +16,15 @@
 # users commonly want.
 #
 
+require 'active_support/logger'
 require 'vcr'
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.allow_http_connections_when_no_cassette = false
+  c.default_cassette_options = { :record => :new_episodes }
+  # c.debug_logger = ActiveSupport::Logger.new(STDOUT)
+  c.debug_logger = File.open(File.join(File.dirname(__FILE__), '../log/vcr-test.log'), 'w')
   c.configure_rspec_metadata!
 end
 

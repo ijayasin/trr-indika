@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.therealreal.com/v2/products/2759947
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Language:
+      - en
+      Currency:
+      - USD
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Cache-Control:
+      - public, max-age=60
+      Content-Type:
+      - application/vnd.therealreal.v2+json; charset=utf-8
+      Via:
+      - 1.1 varnish
+      - 1.1 vegur
+      Content-Length:
+      - '740'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 05 Dec 2016 03:50:26 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-sjc3630-SJC
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1480909826.609087,VS0,VE125
+      Vary:
+      - Currency,Membership,Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"product":{"id":"2759947","sku":"WRAGB52161","name":"Straight-Leg
+        Mid-Rise Jeans","disclaimers":[],"description":"Medium wash Rag \u0026 Bone
+        straight-leg mid-rise jeans with five pockets, contrast stitching throughout
+        and zip closure at front.","condition":"Excellent","quantity":0,"price":{"value":"65.0","currency":"USD"},"discount":null,"msrp":null,"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/women/clothing/jeans/rag-and-bone-straight-leg-mid-rise-jeans-2","links":{"designer":"1105","artist":null,"category":"5","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/WRAGB52161_1_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/WRAGB52161_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/WRAGB52161_2_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/WRAGB52161_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/WRAGB52161_3_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/WRAGB52161_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/WRAGB52161_4_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/WRAGB52161_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/WRAGB52161_5_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/WRAGB52161_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/WRAGB52161_6_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/WRAGB52161_6_enlarged.jpg"}]}],"sizes":[{"type":"clothing","value":"S"},{"type":"foreign","value":"US
+        27"}],"availability":{"type":"sold","name":"Sold"},"components":[{"links":{"attributes":["63587","63792","64018","64276","63449"]}}],"notes":[{"label":"Fabric","content":"98%
+        Cotton, 2% Polyurethane"},{"label":"Condition","content":"No visible signs
+        of wear."}],"made_on":null,"promotion":{"label":"20% Off Code: GIFT","code":"GIFT"}}}
+
+'
+    http_version: 
+  recorded_at: Mon, 05 Dec 2016 03:50:26 GMT
+recorded_with: VCR 3.0.3

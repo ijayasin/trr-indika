@@ -6,6 +6,13 @@
 #   attributes 	    Attribute
 #   category 	      Category
 
+
+unless Rails.env.production?
+  require 'net-http-spy'
+  Net::HTTP.http_logger_options = {:body => true, :verbose => true}
+end
+
+
 class Product < ActiveResource::Base
 
   # Product::ProductCollection
@@ -13,14 +20,9 @@ class Product < ActiveResource::Base
     attr_reader :aggregations
 
     def initialize(parsed = {})
-      puts "\n#{'-'*50}\nPARSED:\n#{parsed.inspect}#{'-'*50}\n"
+      puts "\n#{'-'*50}\nPARSED:\n#{parsed.inspect}\n#{'-'*50}\n"
 
-      @elements  = parsed['products']
-
-      puts "ELEM_SIZE = #{(@elements || []).size}"
-      puts "AGGS       is #{parsed['aggregations'].class.name}"
-      puts "PAGINATION is #{parsed['pagination'].class.name}"
-
+      @elements     = parsed['products']
       @aggregations = parsed['aggregations'] || []
       @pagination   = parsed['pagination']   || {}
     end
@@ -29,20 +31,34 @@ class Product < ActiveResource::Base
       @pagination['links'] || []
     end
 
+
+    def current_page
+      @current_page ||= get_pagination_page('self')
+    end
+
+    def previous_page
+      @previous_page ||= get_pagination_page('prev')
+    end
+
     def next_page
-      @next_page ||= begin
-        nl = pagination_links.select do |link|
-          (link || {})['rel'] == 'next'
-        end.first
-        return '' unless nl
-        nl['href'] || ''
-      end
+      @next_page ||= get_pagination_page('next')
     end
 
     def result_count
       @pagination['total']
     end
+
+    protected
+    def get_pagination_page(rel)
+      nl = pagination_links.select do |link|
+        (link || {})['rel'] == rel
+      end.first
+      return '' unless nl
+      nl['href'] || ''
+    end
   end
+
+  SUPPORTED_AGGREGATIONS = ['available', 'editors_pick', 'on_sale_now', 'with_tags']
 
   self.site                   = 'https://api.therealreal.com/v2/'
   self.element_name           = "product"
@@ -53,7 +69,8 @@ class Product < ActiveResource::Base
   self.include_format_in_path = false
 
   headers['Accept-Language'] = 'en'
-  headers['Currency'] = 'USD'
+  headers['Content-Type']    = 'application/vnd.therealreal.v2+json'
+  headers['Currency']        = 'USD'
 
   def availability
     attributes['availability'].try(:name)
@@ -70,6 +87,10 @@ class Product < ActiveResource::Base
   def price
     pr = attributes['price']
     Money.new(pr.value.to_f*100, pr.currency)
+  end
+
+  def self.with_supported_aggregations(params={})
+    {:aggregations => SUPPORTED_AGGREGATIONS.join(',')}.merge(params||{})
   end
 
   protected
