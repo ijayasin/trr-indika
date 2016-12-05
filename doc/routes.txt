@@ -1,3 +1,3 @@
         Prefix Verb URI Pattern               Controller#Action
-          root GET  /                         products#index
 products_index GET  /products/index(.:format) products#index
+          root GET  /                         products#index

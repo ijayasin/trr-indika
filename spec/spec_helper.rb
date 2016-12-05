@@ -15,8 +15,20 @@
 # The `.rspec` file also contains a few flags that are not defaults but that
 # users commonly want.
 #
+
+require 'vcr'
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.allow_http_connections_when_no_cassette = false
+  c.configure_rspec_metadata!
+end
+
+
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  config.expose_dsl_globally = true
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -97,3 +109,8 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+
+require 'activeresource'
+ActiveResource::Base.logger = Logger.new(STDOUT)
+ActiveResource::Base.logger.level = Logger::DEBUG

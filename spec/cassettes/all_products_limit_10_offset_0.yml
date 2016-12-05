@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.therealreal.com/v2/products?limit=10&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Language:
+      - en
+      Currency:
+      - USD
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Cache-Control:
+      - public, max-age=60
+      Content-Type:
+      - application/vnd.therealreal.v2+json; charset=utf-8
+      Via:
+      - 1.1 varnish
+      - 1.1 vegur
+      Content-Length:
+      - '3170'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 05 Dec 2016 02:22:37 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-sjc3633-SJC
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1480904556.864816,VS0,VE425
+      Vary:
+      - Currency,Membership,Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination":{"total":578458,"links":[{"rel":"self","href":"https://api.therealreal.com/v2/products?limit=10\u0026offset=0"},{"rel":"next","href":"https://api.therealreal.com/v2/products?limit=10\u0026offset=10"}]},"products":[{"id":"2741112","sku":"CHAIR20062","name":"Ikat
+        Side s","disclaimers":[{"message":"This item can only be shipped to the U.S."}],"description":"Pair
+        of light carved wood side chairs with blue and white ikat upholstery and whicker
+        backings. \r\n\r\nFor our oversize Art \u0026 Home items such as Furniture
+        and Area Rugs, we provide a White Glove delivery service which includes in-room
+        delivery, assembly and removal of packing materials. \u003cb\u003eOur deliveries
+        typically take 4 to 6 weeks from the time the order is placed.\u003c/b\u003e\r\n","condition":"Very
+        Good","quantity":1,"price":{"value":"225.0","currency":"USD"},"discount":null,"msrp":null,"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/furniture/seating/ikat-side-chairs","links":{"designer":"4845","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/CHAIR20062_1_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/CHAIR20062_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/CHAIR20062_2_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/CHAIR20062_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/CHAIR20062_3_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/CHAIR20062_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/CHAIR20062_4_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/CHAIR20062_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/CHAIR20062_5_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/CHAIR20062_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/CHAIR20062_6_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/CHAIR20062_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"Few
+        small black markings at front left leg of one chair."},{"label":"Measurements","content":"Height
+        38\", Width 22.5\", Depth 20.5\", Seat Depth 18.5\""}],"made_on":null,"promotion":{"label":"20%
+        Off Code: GIFT","code":"GIFT"}},{"id":"2752549","sku":"CRT28035","name":"Dragon
+        Stationery Set","disclaimers":[{"message":"This item can only be shipped to
+        the U.S."}],"description":"Creme, black, red and gold Cartier partial dragon
+        stationery set with nine cards and seven envelopes. Includes box.","condition":"Very
+        Good","quantity":1,"price":{"value":"65.0","currency":"USD"},"discount":null,"msrp":null,"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/decor-and-accessories/pens-and-stationery/cartier-dragon-stationery-set","links":{"designer":"248","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CRT28035_1_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CRT28035_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CRT28035_2_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CRT28035_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CRT28035_3_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CRT28035_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CRT28035_4_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CRT28035_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CRT28035_5_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CRT28035_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CRT28035_6_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CRT28035_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"One
+        card and three envelopes have been removed."},{"label":"Measurements","content":"Height
+        4.5\", Width 6.5\""}],"made_on":null,"promotion":{"label":"20% Off Code: GIFT","code":"GIFT"}},{"id":"2746247","sku":"AOULI20023","name":"Young
+        Hollywood","disclaimers":[{"message":"Coupons and discounts are not available
+        for this product."},{"message":"This item can only be shipped to the U.S."}],"description":"Hardcover
+        book published by Assouline, \u003ci\u003eYoung Hollywood\u003c/i\u003e comprises
+        photographs taken by Claiborne Swanson Frank of up-and-coming women in today''s
+        entertainment industry, from Isabel Lucas and Elisabeth Moss to Mickey Sumner
+        and Amber Heard, capturing them in the style of old Hollywood portraits. ","condition":"Excellent","quantity":1,"price":{"value":"45.0","currency":"USD"},"discount":null,"msrp":{"value":"75.0","currency":"USD"},"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/decor-and-accessories/books/assouline-young-hollywood","links":{"designer":"4963","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/AOULI20023_1_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/AOULI20023_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/AOULI20023_2_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/AOULI20023_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/AOULI20023_3_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/AOULI20023_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/AOULI20023_4_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/AOULI20023_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/AOULI20023_5_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/AOULI20023_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/AOULI20023_6_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/AOULI20023_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"No
+        visible signs of use."},{"label":"Measurements","content":"Length 9.8\", Width
+        13\", Depth 1\""}],"made_on":null,"promotion":null},{"id":"2745788","sku":"AOULI20019","name":"In
+        the Spirit of Miami Beach","disclaimers":[{"message":"Coupons and discounts
+        are not available for this product."},{"message":"This item can only be shipped
+        to the U.S."}],"description":"Hardcover book published by Assouline and titled
+        \u003ci\u003eIn the Spirit of Miami Beach\u003c/i\u003e includes photographs
+        representative of Miami''s melting pot of cultural influences, namely the
+        Art Deco and Spanish Baroque architecture, its vibrant nightlife, elegant
+        beach bodies and energetic pace of the city. Text by David Leddick guides
+        the reader through the city''s various hotspots.","condition":"Excellent","quantity":1,"price":{"value":"35.0","currency":"USD"},"discount":null,"msrp":{"value":"50.0","currency":"USD"},"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/decor-and-accessories/books/in-the-spirit-of-miami-beach","links":{"designer":"4963","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/AOULI20019_1_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/AOULI20019_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/AOULI20019_2_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/AOULI20019_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/AOULI20019_3_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/AOULI20019_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/AOULI20019_4_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/AOULI20019_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/AOULI20019_5_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/AOULI20019_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/AOULI20019_6_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/AOULI20019_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"No
+        visible signs of use."},{"label":"Measurements","content":"Length 7.6\", Width
+        10.8\", Depth 0.75\""}],"made_on":null,"promotion":null},{"id":"2745660","sku":"BCC21856","name":"Nancy
+        Double Old-Fashioned Glasses","disclaimers":[{"message":"This item can only
+        be shipped to the U.S."}],"description":"Set of nine Baccarat ''Nancy'' crystal
+        double old-fashioned glasses.","condition":"Very Good","quantity":1,"price":{"value":"545.0","currency":"USD"},"discount":null,"msrp":{"value":"1530.0","currency":"USD"},"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/tabletop-and-kitchen/drinkware-and-barware/baccarat-colmar-double-old-fashioned-glasses","links":{"designer":"120","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21856_1_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21856_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21856_2_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21856_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21856_3_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21856_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21856_4_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21856_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21856_5_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21856_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21856_6_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21856_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"Minimal
+        scratches throughout."},{"label":"Measurements","content":"Height 4\", Diameter
+        3.25\""}],"made_on":null,"promotion":{"label":"20% Off Code: GIFT","code":"GIFT"}},{"id":"2741458","sku":"LIM20583","name":"Hand-Painted
+        Porcelain Box","disclaimers":[{"message":"This item can only be shipped to
+        the U.S."}],"description":"Red Limoges hand-painted porcelain box with fruit
+        motif.","condition":"Very Good","quantity":1,"price":{"value":"65.0","currency":"USD"},"discount":null,"msrp":null,"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/decor-and-accessories/decorative-accents/limoges-hand-painted-porcelain-box-53","links":{"designer":"4514","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/LIM20583_1_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/LIM20583_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/LIM20583_2_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/LIM20583_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/LIM20583_3_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/LIM20583_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/LIM20583_4_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/LIM20583_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/LIM20583_5_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/LIM20583_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/LIM20583_6_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/LIM20583_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"Lid
+        is slightly loose."},{"label":"Measurements","content":"Height 1.75\", Width
+        1\", Depth 0.75\""}],"made_on":null,"promotion":{"label":"20% Off Code: GIFT","code":"GIFT"}},{"id":"2741001","sku":"CHAIR20059","name":"Wingback","disclaimers":[{"message":"This
+        item can only be shipped to the U.S."}],"description":"White wingback chair
+        with cotton upholstery and floral sculpted wood details.\r\n\r\nFor our oversize
+        Art \u0026 Home items such as Furniture and Area Rugs, we provide a White
+        Glove delivery service which includes in-room delivery, assembly and removal
+        of packing materials. \u003cb\u003eOur deliveries typically take 4 to 6 weeks
+        from the time the order is placed.\u003c/b\u003e\r\n","condition":"Very Good","quantity":1,"price":{"value":"245.0","currency":"USD"},"discount":null,"msrp":null,"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/furniture/seating/wingback-chair","links":{"designer":"4845","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CHAIR20059_1_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CHAIR20059_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CHAIR20059_2_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CHAIR20059_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CHAIR20059_3_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CHAIR20059_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CHAIR20059_4_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CHAIR20059_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CHAIR20059_5_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CHAIR20059_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/CHAIR20059_6_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/CHAIR20059_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"Faint
+        markings at upholstery; light wear throughout wood."},{"label":"Measurements","content":"Height
+        37\", Width 27\", Depth 23\", Seat Depth 20\""}],"made_on":null,"promotion":{"label":"20%
+        Off Code: GIFT","code":"GIFT"}},{"id":"2637026","sku":"BCC21760","name":"Torch
+        Wall Sconces","disclaimers":[{"message":"Coupons and discounts are not available
+        for this product."},{"message":"This item can only be shipped to the U.S."}],"description":"In
+        Stores Now. Pair of clear crystal Arik Levy for Baccarat Torch wall sconces
+        with single ruby crystal accents, black tassel pendants and black fabric shades.\u003cbr\u003e\u003c/br\u003e\u003cbr\u003eFor
+        our Art \u0026 Home items such as Furniture and Area Rugs, we provide a White
+        Glove delivery service which includes in-room delivery, assembly and removal
+        of packing materials. \u003cb\u003eOur deliveries typically take 4 to 6 weeks
+        from the time the order is placed.\u003c/b\u003e\u003c/br\u003e\r\n","condition":"Very
+        Good","quantity":1,"price":{"value":"1645.0","currency":"USD"},"discount":null,"msrp":{"value":"5470.0","currency":"USD"},"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/lighting/ceiling-and-fixtures/baccarat-torch-wall-sconces-1","links":{"designer":"120","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21760_1_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21760_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21760_2_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21760_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21760_3_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21760_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21760_4_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21760_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21760_5_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21760_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/BCC21760_6_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/BCC21760_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"Light
+        toning and minor wear at sockets."},{"label":"Measurements","content":"Height
+        24.5\", Length 6.6\", Width 5\""}],"made_on":null,"promotion":null},{"id":"1026506","sku":"WYG20090","name":"Wool
+        Blanket","disclaimers":[{"message":"This item can only be shipped to the U.S."}],"description":"Rust,
+        gold and multicolor Ralph Lauren Home woven wool and cotton blanket. \r\n75%
+        wool and 25% cotton\r\n","condition":"Very Good","quantity":1,"price":{"value":"125.0","currency":"USD"},"discount":null,"msrp":null,"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/pillows-and-throws/ralph-lauren-wool-blanket-1","links":{"designer":"1111","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/WYG20090_1_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/WYG20090_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/WYG20090_2_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/WYG20090_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/WYG20090_3_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/WYG20090_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/WYG20090_4_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/WYG20090_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/WYG20090_5_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/WYG20090_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images4.therealreal.com/WYG20090_6_product.jpg"},{"size":"large","src":"https://product-images4.therealreal.com/WYG20090_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"Very
+        slight wear throughout"},{"label":"Measurements","content":"Height 69\", Width
+        54\""}],"made_on":null,"promotion":{"label":"20% Off Code: GIFT","code":"GIFT"}},{"id":"2636913","sku":"BCC21759","name":"Torch
+        Wall Sconces","disclaimers":[{"message":"Coupons and discounts are not available
+        for this product."},{"message":"This item can only be shipped to the U.S."}],"description":"In
+        Stores Now. Pair of clear crystal Arik Levy for Baccarat Torch wall sconces
+        with single ruby crystal accents, black tassel pendants and creme fabric shades.\u003cbr\u003e\u003c/br\u003e\u003cbr\u003eFor
+        our Art \u0026 Home items such as Furniture and Area Rugs, we provide a White
+        Glove delivery service which includes in-room delivery, assembly and removal
+        of packing materials. \u003cb\u003eOur deliveries typically take 4 to 6 weeks
+        from the time the order is placed.\u003c/b\u003e\u003c/br\u003e\r\n","condition":"Excellent","quantity":1,"price":{"value":"1645.0","currency":"USD"},"discount":null,"msrp":{"value":"5470.0","currency":"USD"},"dimensions":{"width":null,"height":null,"depth":null},"href":"https://www.therealreal.com/products/home/lighting/ceiling-and-fixtures/baccarat-torch-wall-sconces","links":{"designer":"120","artist":null,"category":"7","return_policy":"refund","attributes":[]},"images":[{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/BCC21759_1_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/BCC21759_1_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/BCC21759_2_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/BCC21759_2_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/BCC21759_3_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/BCC21759_3_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/BCC21759_4_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/BCC21759_4_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/BCC21759_5_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/BCC21759_5_enlarged.jpg"}]},{"rel":"main","media":[{"size":"medium","src":"https://product-images2.therealreal.com/BCC21759_6_product.jpg"},{"size":"large","src":"https://product-images2.therealreal.com/BCC21759_6_enlarged.jpg"}]}],"sizes":[],"availability":{"type":"available","name":"Available"},"components":[],"notes":[{"label":"Condition","content":"No
+        visible signs of use."},{"label":"Measurements","content":"Height 24.5\",
+        Length 6.6\", Width 5\""}],"made_on":null,"promotion":null}],"selections":[{"type":"sort","name":"Sort
+        by","options":[{"name":"Newest First","value":"default"},{"name":"Price: Low
+        - High","value":"price:asc"},{"name":"Price: High - Low","value":"price:desc"},{"name":"Sold
+        Items First","value":"sold:desc"}]}]}
+
+'
+    http_version: 
+  recorded_at: Mon, 05 Dec 2016 02:22:37 GMT
+recorded_with: VCR 3.0.3

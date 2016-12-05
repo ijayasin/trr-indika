@@ -32,6 +32,9 @@ Coffee:
 Js:
   js:assets
 
+MoneyRails:
+  money_rails:initializer
+
 Rspec:
   rspec:controller
   rspec:feature

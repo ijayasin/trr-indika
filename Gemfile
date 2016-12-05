@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Custom Sources
+# Custom source for GitHub because the default :github doesn't use HTTPS undler bundler 1.x.
+git_source(:github_https){ |repo_name|  "https://github.com/#{repo_name}.git" }
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -30,10 +33,22 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use ActiveResource for RESTful API calls.
+# gem 'activeresource', github: 'rails/activeresource', branch: 'master'
+# gem 'activeresource', git: 'https://github.com/rails/activeresource.git'
+gem 'activeresource', github_https: 'rails/activeresource', branch: 'master'
+
+
+# Use the money gem to handle currency values.
+gem 'money-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
+
+  # VCR framework for speeeding tests which call external APIs.
+  gem 'vcr'
 end
 
 group :development do
@@ -43,6 +58,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

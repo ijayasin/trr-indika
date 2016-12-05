@@ -35,6 +35,7 @@ rake secret                             # Generate a cryptographically secure se
 rake spec                               # Run all specs in spec directory (excluding plugin specs)
 rake spec:controllers                   # Run the code examples in spec/controllers
 rake spec:helpers                       # Run the code examples in spec/helpers
+rake spec:models                        # Run the code examples in spec/models
 rake spec:views                         # Run the code examples in spec/views
 rake stats                              # Report code statistics (KLOCs, etc) from the application or engine
 rake time:zones[country_or_offset]      # List all time zones, list by two-letter country code (`rails time:zones[US]`), or list by UTC offset (`rails time:zones[-8]`)
