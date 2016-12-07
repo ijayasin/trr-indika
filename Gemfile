@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.3'
+
 # Custom Sources
 # Custom source for GitHub because the default :github doesn't use HTTPS undler bundler 1.x.
 git_source(:github_https){ |repo_name|  "https://github.com/#{repo_name}.git" }
