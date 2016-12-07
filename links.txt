@@ -1,0 +1,12 @@
+curl 'https://api.therealreal.com/v2/products/2750960?include=designer,return_policy,attributes' | tee product-2750960-available-very_good.json
+curl 'https://api.therealreal.com/v2/products/2759947?include=designer,return_policy,attributes' | tee product-2759947-sold-excellent.json
+
+Product Snippet View 2
+http://bootsnipp.com/snippets/1K0md
+
+
+Product Snippet View
+http://bootsnipp.com/snippets/qANeB
+http://bootsnipp.com/fullscreen/qANeB
+
+
