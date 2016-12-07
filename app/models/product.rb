@@ -16,7 +16,11 @@ end
 class Product < ActiveResource::Base
 
   # Product::ProductCollection
+  # An instance of this class is returned when you per Product.all, Product.where(...),
+  # and Product.find(:all). The constructor has access to the parsed JSON instance.
   class ProductCollection < ActiveResource::Collection
+    DEFAULT_LIMIT = 30
+
     attr_reader :aggregations
 
     def initialize(parsed = {})
@@ -31,17 +35,36 @@ class Product < ActiveResource::Base
       @pagination['links'] || []
     end
 
+    def current_offset
+      @current_offset ||= CGI.parse(URI.parse(current_url||'').query||'').try(:[], "offset").try(:first).to_i
+    end
 
+    def current_limit
+      @current_limit ||= (CGI.parse(URI.parse(current_url||'').query||'').try(:[], "limit").try(:first)||DEFAULT_LIMIT).to_i
+    end
+    alias limit_value current_limit  # The limit_value alias is used by Kaminari
+
+    # This method is expected by Kaminari.
     def current_page
-      @current_page ||= get_pagination_page('self')
+      return 0 if current_limit.blank? || current_limit.zero?
+      (current_offset / current_limit) + 1
     end
 
-    def previous_page
-      @previous_page ||= get_pagination_page('prev')
+    def total_pages
+      return 1 if current_limit.blank? || current_limit.zero?
+      (result_count / current_limit) + 1
     end
 
-    def next_page
-      @next_page ||= get_pagination_page('next')
+    def current_url
+      @current_url ||= get_pagination_page('self')
+    end
+
+    def previous_url
+      @previous_url ||= get_pagination_page('prev')
+    end
+
+    def next_url
+      @next_url ||= get_pagination_page('next')
     end
 
     def result_count
@@ -97,6 +120,7 @@ class Product < ActiveResource::Base
   def filtered_images(rel, size)
     (images || []).select{|img| img.rel == rel}.map do |img|
       img.media.select{|m| m.size == size }.map{|m| m.src }
+
     end.flatten || []
   end
 end

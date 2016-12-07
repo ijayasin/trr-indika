@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## Running TRR-Indika
 
-* System dependencies
+This Rails app was developed using Ruby 2.3.3 and Rails 5.
 
-* Configuration
 
-* Database creation
+1. Unpack tarball.
 
-* Database initialization
+   tar xvfz trr-indika.tar.gz
+   cd trr-indika
 
-* How to run the test suite
+2. Create gemset.
 
-* Services (job queues, cache servers, search engines, etc.)
+   rvm gemset create ruby-2.3.3@realreal
+   rvm use ruby-2.3.3@realreal
+   
+3. Install gems.
 
-* Deployment instructions
+   bundle install
 
-* ...
+4. You may need to run Sequalite migrations.
+
+    rake db:create
+    rake db:migrate
+    
+    RAILS_ENV=test rake db:create
+    RAILS_ENV=test rake db:migrate
+    
+    RAILS_ENV=production rake db:create
+    RAILS_ENV=production rake db:migrate
+
+5. Run the Rails server.
+
+   bin/rails server
+   
+6. Browse.
+
+   open 'http://127.0.0.1:3000'

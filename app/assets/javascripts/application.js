@@ -15,3 +15,15 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+
+
+function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('fa-caret-down fa-caret-right');
+}
+$('.filter-panel-accordian').on('hidden.bs.collapse', toggleChevron);
+$('.filter-panel-accordian').on('shown.bs.collapse',  toggleChevron);

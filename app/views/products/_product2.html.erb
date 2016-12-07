@@ -1,0 +1,16 @@
+<% product = product2 %>
+<div class="card col-md-4 col-sm-6 col-xs-12 product2">
+  <% if product.meduim_main_images.present? %>
+      <img class="card-img-top" src="<%= product.meduim_main_images.first %>" alt="">
+  <% else %>
+      <img class="card-img-top" src="http://placehold.it/350x222" alt="">
+  <% end %>
+
+  <div class="card-block">
+    <h4 class="float-md-right"><%= humanized_money_with_symbol product.price %></h4>
+    <h4 class="card-title"><%= product.name %></h4>
+    <small class="text-muted float-md-left">Availability: <%= product.availability %></small>
+    <small class="text-muted float-md-left">Conditioin: <%= product.condition %></small>
+    <p class="card-text float-md-right"><%= product.description %></p>
+  </div>
+</div>

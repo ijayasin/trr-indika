@@ -14,8 +14,8 @@ describe Product, type: :model do
         expect(subject.result_count).to eq 578342
       end
 
-      it "must have a next page" do
-        expect(subject.next_page).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=30'
+      it "must have a next url" do
+        expect(subject.next_url).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=30'
       end
     end
 
@@ -33,16 +33,16 @@ describe Product, type: :model do
       end
 
       context 'pagination' do
-        it "must have a previous page" do
-          expect(subject.previous_page).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=30'
+        it "must have a previous url" do
+          expect(subject.previous_url).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=30'
         end
 
-        it "must have a current page" do
-          expect(subject.current_page).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=60'
+        it "must have a current url" do
+          expect(subject.current_url).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=60'
         end
 
-        it "must have a next page" do
-          expect(subject.next_page).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=90'
+        it "must have a next url" do
+          expect(subject.next_url).to eq 'https://api.therealreal.com/v2/products?limit=30&offset=90'
         end
       end
     end
@@ -60,8 +60,8 @@ describe Product, type: :model do
         expect(subject.aggregations).not_to be_empty
       end
 
-      it "must have a next page" do
-        expect(subject.next_page).to eq 'https://api.therealreal.com/v2/products?aggregations=available%2Ceditors_pick%2Con_sale_now%2Cwith_tags&limit=30&offset=90'
+      it "must have a next url" do
+        expect(subject.next_url).to eq 'https://api.therealreal.com/v2/products?aggregations=available%2Ceditors_pick%2Con_sale_now%2Cwith_tags&limit=30&offset=90'
       end
     end
 
@@ -73,8 +73,8 @@ describe Product, type: :model do
         expect(subject.result_count).to eq 578342
       end
 
-      it "must have a next page" do
-        expect(subject.next_page).to eq 'https://api.therealreal.com/v2/products?limit=40&offset=40'
+      it "must have a next url" do
+        expect(subject.next_url).to eq 'https://api.therealreal.com/v2/products?limit=40&offset=40'
       end
     end
   end

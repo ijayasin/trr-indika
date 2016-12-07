@@ -1,0 +1,11 @@
+<div class="row api-call-info">
+  <h4>TRR API Call</h4>
+  <pre class="api-call-info-code">
+    AVAILABILITY  : <%= params[:availability]     %>
+    CONDITION     : <%= params[:condition]        %>
+    TOTAL         : <%= @products.result_count    %>
+    OFFSET        : <%= @products.current_offset  %>
+
+    <%= @products.current_url %>
+  </pre>
+</div>

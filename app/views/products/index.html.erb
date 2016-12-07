@@ -1,20 +1,24 @@
-<h1>Products</h1>
+<div class="container-fluid">
 
-
-<ul data-turbolinks="true">
-<% product_aggregations_filters(@products) do |name, selected, facet_url| %>
-  <li><%= link_to(name, facet_url) %> (<%= selected %>)</li>
-<% end %>
-</ul>
-
-
-<% #= render :partial => 'products_table', :locals => {:products => @products} %>
-
-
-<div class="container">
   <div class="row">
-    <%= render :partial => 'product', :collection => @products %>
+    <% # Filters sidebar %>
+    <div class="col-md-2">
+      <%= render :partial => 'filters', :locals => {:products => @products} %>
+    </div>
+
+    <% # Product list %>
+    <div class="col-md-10">
+      <%= render :partial => 'product_list2', :locals => {:products => @products} %>
+    </div>
   </div>
+
+  <% # Pagination using Kaminari %>
+  <div class="row product-pagination" data-turbolinks="true">
+    <%= paginate @products  %>
+  </div>
+
+  <% # TRR API call debug information (eg:- url, total results, offset, selected filters...) %>
+  <%= render :partial => 'api_debug_info' %>
 </div>
 
 

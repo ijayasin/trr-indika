@@ -45,6 +45,11 @@ gem 'money-rails'
 # Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'rails_layout'
+gem 'font-awesome-rails'
+
+
+# Pagination
+gem 'kaminari'
 
 
 group :development, :test do

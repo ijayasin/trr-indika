@@ -13,10 +13,150 @@
   -webkit-transition: border .2s ease-in-out;
   -o-transition: border .2s ease-in-out;
   transition: border .2s ease-in-out;
+  height: 650px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card {
+  height: 550px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card.product2 {
+  height: 715px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+
+
 }
 
 .caption {
   h4 {
     font-size: 18px;
   }
+}
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: #f5f5f5;
+  border-right: 1px solid #eee;
+}
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+
+
+.filter-panel  .list-group {
+  margin-bottom: 0px;
+}
+.filter-panel .list-group-item:first-child {
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
+}
+.filter-panel .list-group-item {
+  border-right:0px;
+  border-left:0px;
+}
+.filter-panel .list-group-item:last-child{
+  border-bottom-right-radius:0px;
+  border-bottom-left-radius:0px;
+}
+.filter-panel .list-group-item {
+  padding: 5px;
+}
+.filter-panel .panel-heading {
+  /* 				padding: 10px 15px;
+                  border-bottom: 1px solid transparent; */
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom: 1px solid darkslategrey;
+}
+.filter-panel .panel-heading:last-child{
+  /* border-bottom: 0px; */
+}
+.filter-panel {
+  border-radius: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+.filter-panel .radio, .checkbox {
+  margin: 0px;
+  padding-left: 10px;
+}
+.filter-panel .panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+  outline: none;
+}
+.filter-panel .panel-body > .panel-heading{
+  padding:10px 10px;
+}
+.filter-panel .panel-body {
+  padding: 0px;
+}
+/* unvisited link */
+.filter-panel a:link {
+  text-decoration:none;
+}
+
+/* visited link */
+.filter-panel a:visited {
+  text-decoration:none;
+}
+
+/* mouse over link */
+.filter-panel a:hover {
+  text-decoration:none;
+}
+
+/* selected link */
+.filter-panel a:active {
+  text-decoration:none;
+}
+
+
+
+.list-group-item.active > a {
+  color: #eee;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+.product-pagination {
+  text-align: center;
 }
