@@ -32,6 +32,10 @@ Coffee:
 Js:
   js:assets
 
+Kaminari:
+  kaminari:config
+  kaminari:views
+
 Layout:
   layout:devise
   layout:install
