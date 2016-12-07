@@ -21,7 +21,7 @@ This Rails app was developed using Ruby 2.3.3 and Rails 5.
 
    bundle install
 
-4. You may need to run Sequalite migrations.
+4. You may need to run DB migrations.
 
     rake db:create
     rake db:migrate

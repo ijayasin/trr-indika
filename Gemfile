@@ -9,7 +9,17 @@ git_source(:github_https){ |repo_name|  "https://github.com/#{repo_name}.git" }
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+# gem 'mysql'
+
+# ls /usr/local/Cellar/postgresql/9.6.1/bin/pg_config
+# env ARCHFLAGS="-arch x86_64" gem install pg -- --with-pg-config=/usr/local/Cellar/postgresql/9.3.3/bin/pg_config
+# gem install pg -- --with-pg-config=/usr/local/Cellar/postgresql/9.3.3/bin/pg_config
+gem 'pg'
+
+# gem install mysql2 -- --with-mysql-config=/usr/local/Cellar/mysql/5.6.10/bin/mysql_config
+# gem 'mysql2'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -62,6 +72,8 @@ group :development, :test do
   # VCR framework for speeeding tests which call external APIs.
   gem 'vcr'
   gem 'net-http-spy'
+
+  gem 'sqlite3'
 end
 
 group :development do
